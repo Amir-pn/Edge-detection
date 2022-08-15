@@ -4,7 +4,7 @@ from skimage import io
 import matplotlib.pyplot as plt
 from skimage.filters import prewitt_h, roberts, scharr, sobel_v,roberts_pos_diag
 
-img2= io.imread("C:/Users/dell/Desktop/Project/images/image2.jpg",as_gray=True)
+img2= io.imread("path.../image.jpg",as_gray=True)
 horizontal_edge= prewitt_h(img2, mask=None)
 vertical_edge= sobel_v(img2, mask=None)
 cross_edge= roberts_pos_diag(img2, mask=None)
